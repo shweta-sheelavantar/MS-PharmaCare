@@ -1,0 +1,282 @@
+[
+  {
+    "name": "Vitamin D3 Drops",
+    "description": "Supports healthy bone development in children.",
+    "price": 349.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharma/Baby%20needs%20and%20pediatric%20needs/Vitamin%20D3%20Drops?updatedAt=1785176453169",
+    "category_id": 4
+  },
+  {
+    "name": "Pediatric Probiotic Sachets",
+    "description": "Supports healthy digestion and gut health.",
+    "price": 280.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharma/Baby%20needs%20and%20pediatric%20needs/Pediatric%20Probiotic%20Sachets?updatedAt=1785176453335",
+    "category_id": 4
+  },
+  {
+    "name": "Pediatric ORS Powder",
+    "description": "Replaces fluids lost due to dehydration.",
+    "price": 30.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharma/Baby%20needs%20and%20pediatric%20needs/Pediatric%20ORS%20Powder?updatedAt=1785176453258",
+    "category_id": 4
+  },
+  {
+    "name": "Pediatric Multivitamin Syrup",
+    "description": "Daily multivitamin supplement for children.",
+    "price": 249.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharma/Baby%20needs%20and%20pediatric%20needs/Pediatric%20Multivitamin%20Syrup?updatedAt=1785176453130",
+    "category_id": 4
+  },
+  {
+    "name": "Pediatric Fever Syrup",
+    "description": "Helps reduce fever in children.",
+    "price": 85.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharma/Baby%20needs%20and%20pediatric%20needs/Pediatric%20Fever%20Syrup?updatedAt=1785176453412",
+    "category_id": 4
+  },
+  {
+    "name": "Pediatric Electrolyte Drink",
+    "description": "Ready-to-drink electrolyte solution.",
+    "price": 95.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharma/Baby%20needs%20and%20pediatric%20needs/Pediatric%20Electrolyte%20Drink?updatedAt=1785176453294",
+    "category_id": 4
+  },
+  {
+    "name": "Pediatric Cough Syrup",
+    "description": "Provides relief from cough.",
+    "price": 135.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharma/Baby%20needs%20and%20pediatric%20needs/Pediatric%20Cough%20Syrup?updatedAt=1785176453332",
+    "category_id": 4
+  },
+  {
+    "name": "Pediatric Cold Syrup",
+    "description": "Relieves common cold symptoms.",
+    "price": 125.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharma/Baby%20needs%20and%20pediatric%20needs/Pediatric%20Cold%20Syrup?updatedAt=1785176453323",
+    "category_id": 4
+  },
+  {
+    "name": "Pampers Baby Diapers (Small",
+    "description": "Pack) Soft, leak-proof diapers for babies.",
+    "price": 299.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharma/Baby%20needs%20and%20pediatric%20needs/Pampers%20Baby%20Diapers%20(Small%20Pack)?updatedAt=1785176453338",
+    "category_id": 4
+  },
+  {
+    "name": "Mamy Poko Baby Wipes (72",
+    "description": "Sheets) Alcohol-free baby wipes.",
+    "price": 149.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharma/Baby%20needs%20and%20pediatric%20needs/Mamy%20poko%20Baby%20Wipes%20(72%20Sheets).webp?updatedAt=1785176453185",
+    "category_id": 4
+  },
+  {
+    "name": "Iron Syrup",
+    "description": "Helps prevent iron deficiency.",
+    "price": 199.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharma/Baby%20needs%20and%20pediatric%20needs/Iron%20Syrup?updatedAt=1785176453125",
+    "category_id": 4
+  },
+  {
+    "name": "Diaper Rash Cream",
+    "description": "Prevents and soothes diaper rash.",
+    "price": 229.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharma/Baby%20needs%20and%20pediatric%20needs/Diaper%20Rash%20Cream?updatedAt=1785176453158",
+    "category_id": 4
+  },
+  {
+    "name": "Children's Sunscreen SPF 50",
+    "description": "Protects children's skin from UV rays.",
+    "price": 399.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharma/Baby%20needs%20and%20pediatric%20needs/Children's%20Sunscreen%20SPF%2050?updatedAt=1785176453372",
+    "category_id": 4
+  },
+  {
+    "name": "Children's Multivitamin Gummies",
+    "description": "Chewable daily vitamin supplement.",
+    "price": 399.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharma/Baby%20needs%20and%20pediatric%20needs/Children's%20Multivitamin%20Gummies?updatedAt=1785176453192",
+    "category_id": 4
+  },
+  {
+    "name": "Children's Mosquito Repellent",
+    "description": "Cream Protects against mosquito bites.",
+    "price": 149.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharma/Baby%20needs%20and%20pediatric%20needs/Children's%20Mosquito%20Repellent%20Cream?updatedAt=1785176453368",
+    "category_id": 4
+  },
+  {
+    "name": "Children's Moisturizing Cream",
+    "description": "Moisturizes sensitive skin.",
+    "price": 249.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharma/Baby%20needs%20and%20pediatric%20needs/Children's%20Moisturizing%20Cream?updatedAt=1785176453376",
+    "category_id": 4
+  },
+  {
+    "name": "Children's Lip Balm",
+    "description": "Prevents dry and cracked lips.",
+    "price": 99.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharma/Baby%20needs%20and%20pediatric%20needs/Children's%20Lip%20Balm?updatedAt=1785176453159",
+    "category_id": 4
+  },
+  {
+    "name": "Children's Antiseptic Cream",
+    "description": "Protects minor cuts from infection.",
+    "price": 110.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharma/Baby%20needs%20and%20pediatric%20needs/Children's%20Antiseptic%20Cream?updatedAt=1785176453127",
+    "category_id": 4
+  },
+  {
+    "name": "Calcium Syrup",
+    "description": "Supports healthy bones and teeth.",
+    "price": 229.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharma/Baby%20needs%20and%20pediatric%20needs/Calcium%20Syrup?updatedAt=1785176453311",
+    "category_id": 4
+  },
+  {
+    "name": "Baby Toothpaste",
+    "description": "Fluoride-free toothpaste for babies.",
+    "price": 149.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharma/Baby%20needs%20and%20pediatric%20needs/Baby%20Toothpaste?updatedAt=1785176453238",
+    "category_id": 4
+  },
+  {
+    "name": "Baby Toothbrush",
+    "description": "Soft-bristle toothbrush for babies.",
+    "price": 99.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharma/Baby%20needs%20and%20pediatric%20needs/Baby%20Toothbrush?updatedAt=1785176453364",
+    "category_id": 4
+  },
+  {
+    "name": "Baby Soap",
+    "description": "Gentle moisturizing soap.",
+    "price": 89.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharma/Baby%20needs%20and%20pediatric%20needs/Baby%20Soap?updatedAt=1785176453129",
+    "category_id": 4
+  },
+  {
+    "name": "Baby Shampoo",
+    "description": "Tear-free baby shampoo.",
+    "price": 199.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharma/Baby%20needs%20and%20pediatric%20needs/Baby%20Shampoo?updatedAt=1785176453415",
+    "category_id": 4
+  },
+  {
+    "name": "Baby Powder",
+    "description": "Keeps baby's skin dry.",
+    "price": 145.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharma/Baby%20needs%20and%20pediatric%20needs/Baby%20Powder?updatedAt=1785176453170",
+    "category_id": 4
+  },
+  {
+    "name": "Baby Pacifier",
+    "description": "Soft silicone pacifier.",
+    "price": 199.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharma/Baby%20needs%20and%20pediatric%20needs/Baby%20Pacifier?updatedAt=1785176453389",
+    "category_id": 4
+  },
+  {
+    "name": "Baby Oil",
+    "description": "Massage oil for babies.",
+    "price": 175.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharma/Baby%20needs%20and%20pediatric%20needs/Baby%20Oil?updatedAt=1785176453292",
+    "category_id": 4
+  },
+  {
+    "name": "Baby Mosquito Patch",
+    "description": "Mosquito protection patch.",
+    "price": 179.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharma/Baby%20needs%20and%20pediatric%20needs/Baby%20Mosquito%20Patch?updatedAt=1785176453115",
+    "category_id": 4
+  },
+  {
+    "name": "Baby Lotion",
+    "description": "Moisturizes baby's skin.",
+    "price": 225.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharma/Baby%20needs%20and%20pediatric%20needs/Baby%20Lotion?updatedAt=1785176453134",
+    "category_id": 4
+  },
+  {
+    "name": "Baby Laundry Detergent",
+    "description": "Mild detergent for baby clothes.",
+    "price": 349.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharma/Baby%20needs%20and%20pediatric%20needs/Baby%20Laundry%20Detergent?updatedAt=1785176453219",
+    "category_id": 4
+  },
+  {
+    "name": "Baby Formula Milk",
+    "description": "Infant nutrition formula.",
+    "price": 699.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharma/Baby%20needs%20and%20pediatric%20needs/Baby%20Formula%20Milk?updatedAt=1785176453115",
+    "category_id": 4
+  },
+  {
+    "name": "Baby Feeding Bottle",
+    "description": "BPA-free feeding bottle.",
+    "price": 249.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharma/Baby%20needs%20and%20pediatric%20needs/Baby%20Feeding%20Bottle?updatedAt=1785176452972",
+    "category_id": 4
+  },
+  {
+    "name": "Baby Cereal",
+    "description": "Nutritious cereal for babies.",
+    "price": 325.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharma/Baby%20needs%20and%20pediatric%20needs/Baby%20Cereal?updatedAt=1785176452957",
+    "category_id": 4
+  },
+  {
+    "name": "Baby Bottle Cleaner",
+    "description": "Bottle cleaning liquid.",
+    "price": 189.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharma/Baby%20needs%20and%20pediatric%20needs/Baby%20Bottle%20Cleaner?updatedAt=1785176452715",
+    "category_id": 4
+  },
+  {
+    "name": "Baby Body Wash",
+    "description": "Gentle body wash.",
+    "price": 249.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharma/Baby%20needs%20and%20pediatric%20needs/Baby%20Body%20Wash?updatedAt=1785176452738",
+    "category_id": 4
+  },
+  {
+    "name": "Baby Bib",
+    "description": "Waterproof feeding bib.",
+    "price": 99.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharma/Baby%20needs%20and%20pediatric%20needs/Baby%20Bib?updatedAt=1785176452700",
+    "category_id": 4
+  }
+]

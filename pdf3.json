@@ -1,0 +1,242 @@
+[
+  {
+    "name": "HydraGlow Moisturizing Cream",
+    "description": "Deeply hydrates and strengthens the skin barrier for soft, healthy-looking skin.",
+    "price": 899.0,
+    "stock": 50,
+    "image": "https://ik.imagekit.io/stringstackhemavathi/HydraGlow%20Moisturizing%20Cream.webp?updatedAt=1785214832999",
+    "category_id": 5
+  },
+  {
+    "name": "ClearSkin Acne Control Gel",
+    "description": "Helps reduce pimples, excess oil, and redness without over-drying the skin.",
+    "price": 649.0,
+    "stock": 40,
+    "image": "https://ik.imagekit.io/stringstackhemavathi/ClearSkin%20Acne%20Control%20Gel'.webp?updatedAt=1785214857882",
+    "category_id": 5
+  },
+  {
+    "name": "BrightRadiance Vitamin C Serum",
+    "description": "Brightens dull skin and helps reduce the appearance of dark spots.",
+    "price": 1199.0,
+    "stock": 35,
+    "image": "https://ik.imagekit.io/stringstackhemavathi/BrightRadiance%20Vitamin%20C%20Serum.webp?updatedAt=1785214890236",
+    "category_id": 5
+  },
+  {
+    "name": "AquaShield Barrier Repair Cream",
+    "description": "Restores the skin's natural protective barrier with nourishing ingredients.",
+    "price": 999.0,
+    "stock": 45,
+    "image": "https://ik.imagekit.io/stringstackhemavathi/AquaShield%20Barrier%20Repair%20Cream.webp?updatedAt=1785214911228",
+    "category_id": 5
+  },
+  {
+    "name": "PureBalance Oil Control Cleanser",
+    "description": "Gently removes dirt and excess oil while maintaining skin hydration.",
+    "price": 549.0,
+    "stock": 60,
+    "image": "https://ik.imagekit.io/stringstackhemavathi/PureBalance%20Oil%20Control%20Cleanser.webp?updatedAt=1785214932413",
+    "category_id": 5
+  },
+  {
+    "name": "CalmRestore Sensitive Skin",
+    "description": "Cream Soothes irritation and reduces redness in sensitive skin.",
+    "price": 849.0,
+    "stock": 30,
+    "image": "https://ik.imagekit.io/stringstackhemavathi/CalmRestore%20Sensitive%20Skin%20Cream.webp?updatedAt=1785214967293",
+    "category_id": 5
+  },
+  {
+    "name": "RenewPeel Exfoliating Serum",
+    "description": "Promotes smoother, brighter skin with gentle exfoliating acids.",
+    "price": 1099.0,
+    "stock": 25,
+    "image": "https://ik.imagekit.io/stringstackhemavathi/RenewPeel%20Exfoliating%20Serum.webp?updatedAt=1785215002249",
+    "category_id": 5
+  },
+  {
+    "name": "SunGuard SPF 50+ Fluid",
+    "description": "Lightweight broad-spectrum sunscreen with a non-greasy finish.",
+    "price": 799.0,
+    "stock": 80,
+    "image": "https://ik.imagekit.io/stringstackhemavathi/SunGuard%20SPF%2050+%20Fluid.webp?updatedAt=1785215037770",
+    "category_id": 5
+  },
+  {
+    "name": "HydraMist Facial Spray",
+    "description": "Instantly refreshes and hydrates skin throughout the day.",
+    "price": 499.0,
+    "stock": 70,
+    "image": "https://ik.imagekit.io/stringstackhemavathi/HydraMist%20Facial%20Spray.webp?updatedAt=1785215065309",
+    "category_id": 5
+  },
+  {
+    "name": "AgeDefy Retinol Night Serum",
+    "description": "Improves skin texture and reduces the appearance of fine lines.",
+    "price": 1299.0,
+    "stock": 20,
+    "image": "https://ik.imagekit.io/stringstackhemavathi/AgeDefy%20Retinol%20Night%20Serum.webp?updatedAt=1785215104619",
+    "category_id": 5
+  },
+  {
+    "name": "EvenTone Pigmentation Cream",
+    "description": "Helps minimize uneven skin tone and discoloration.",
+    "price": 949.0,
+    "stock": 30,
+    "image": "https://ik.imagekit.io/stringstackhemavathi/EvenTone%20Pigmentation%20Cream.webp?updatedAt=1785215163604",
+    "category_id": 5
+  },
+  {
+    "name": "DermoHydra Face Wash",
+    "description": "Soap-free cleanser that gently cleanses without stripping moisture.",
+    "price": 399.0,
+    "stock": 90,
+    "image": "https://ik.imagekit.io/stringstackhemavathi/DermoHydra%20Face%20Wash.webp?updatedAt=1785215191448",
+    "category_id": 5
+  },
+  {
+    "name": "PureGlow Niacinamide Serum",
+    "description": "Helps refine pores, balance oil, and improve skin clarity.",
+    "price": 999.0,
+    "stock": 40,
+    "image": "https://ik.imagekit.io/stringstackhemavathi/PureGlow%20Niacinamide%20Serum.webp?updatedAt=1785215248081",
+    "category_id": 5
+  },
+  {
+    "name": "LipRepair Therapy Balm",
+    "description": "Moisturizes and protects dry, cracked lips for lasting comfort.",
+    "price": 299.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackhemavathi/LipRepair%20Therapy%20Balm.webp?updatedAt=1785215275163",
+    "category_id": 5
+  },
+  {
+    "name": "EyeRevive Caffeine Gel",
+    "description": "Reduces the appearance of puffiness and tired-looking eyes.",
+    "price": 749.0,
+    "stock": 30,
+    "image": "https://ik.imagekit.io/stringstackhemavathi/EyeRevive%20Caffeine%20Gel'.webp?updatedAt=1785215310871",
+    "category_id": 5
+  },
+  {
+    "name": "Ceramide Repair Lotion",
+    "description": "Nourishes dry skin and reinforces the skin's moisture barrier.",
+    "price": 899.0,
+    "stock": 50,
+    "image": "https://ik.imagekit.io/stringstackhemavathi/Ceramide%20Repair%20Lotion.jpg?updatedAt=1785215345526",
+    "category_id": 5
+  },
+  {
+    "name": "GentleMicellar Cleansing Water",
+    "description": "Removes makeup and impurities while respecting sensitive skin.",
+    "price": 599.0,
+    "stock": 60,
+    "image": "https://ik.imagekit.io/stringstackhemavathi/GentleMicellar%20Cleansing%20Water.avif?updatedAt=1785215393222",
+    "category_id": 5
+  },
+  {
+    "name": "Hydrating Hyaluronic Serum",
+    "description": "Delivers long-lasting hydration for plump, smooth skin.",
+    "price": 1199.0,
+    "stock": 35,
+    "image": "https://ik.imagekit.io/stringstackhemavathi/Hydrating%20Hyaluronic%20Serum.webp",
+    "category_id": 5
+  },
+  {
+    "name": "Blemish Rescue Spot Treatment",
+    "description": "Targets blemishes with fast-acting ingredients to reduce their appearance.",
+    "price": 549.0,
+    "stock": 50,
+    "image": "https://ik.imagekit.io/stringstackhemavathi/Blemish%20Rescue%20Spot%20Treatment.avif",
+    "category_id": 5
+  },
+  {
+    "name": "Overnight Recovery Mask",
+    "description": "Intensely hydrates and revitalizes skin while you sleep.",
+    "price": 999.0,
+    "stock": 30,
+    "image": "https://ik.imagekit.io/stringstackhemavathi/Overnight%20Recovery%20Mask.avif",
+    "category_id": 5
+  },
+  {
+    "name": "Daily Defense Face Cream",
+    "description": "Moisturizes and protects skin from environmental stressors.",
+    "price": 799.0,
+    "stock": 45,
+    "image": "https://ik.imagekit.io/stringstackhemavathi/Daily%20Defense%20Face%20Cream.jpg",
+    "category_id": 5
+  },
+  {
+    "name": "SkinComfort Body Lotion",
+    "description": "Provides all-day hydration for dry and sensitive skin.",
+    "price": 699.0,
+    "stock": 55,
+    "image": "https://ik.imagekit.io/stringstackhemavathi/SkinComfort%20Body%20Lotion.webp",
+    "category_id": 5
+  },
+  {
+    "name": "Anti-Redness Relief Cream",
+    "description": "Helps calm visible redness and supports a balanced complexion.",
+    "price": 849.0,
+    "stock": 35,
+    "image": "https://ik.imagekit.io/stringstackhemavathi/Anti-Redness%20Relief%20Cream.webp",
+    "category_id": 5
+  },
+  {
+    "name": "PoreRefine Mattifying Gel",
+    "description": "Minimizes the appearance of pores and controls shine.",
+    "price": 749.0,
+    "stock": 40,
+    "image": "https://ik.imagekit.io/stringstackhemavathi/PoreRefine%20Mattifying%20Gel.webp",
+    "category_id": 5
+  },
+  {
+    "name": "Gentle Baby Dermo Cream",
+    "description": "Specially formulated to protect and soothe delicate baby skin.",
+    "price": 499.0,
+    "stock": 70,
+    "image": "https://ik.imagekit.io/stringstackhemavathi/Gentle%20Baby%20Dermo%20Cream.webp",
+    "category_id": 5
+  },
+  {
+    "name": "RepairShield Hand Cream",
+    "description": "Repairs rough, dry hands with intensive moisturizing care.",
+    "price": 349.0,
+    "stock": 80,
+    "image": "https://ik.imagekit.io/stringstackhemavathi/RepairShield%20Hand%20Cream.webp",
+    "category_id": 5
+  },
+  {
+    "name": "ScalpBalance Dermo Shampoo",
+    "description": "Cleanses the scalp while helping reduce dryness and flaking.",
+    "price": 649.0,
+    "stock": 45,
+    "image": "https://ik.imagekit.io/stringstackhemavathi/ScalpBalance%20Dermo%20Shampoo.webp",
+    "category_id": 5
+  },
+  {
+    "name": "FootRestore Heel Cream",
+    "description": "Softens rough heels and intensely moisturizes dry feet.",
+    "price": 399.0,
+    "stock": 60,
+    "image": "https://ik.imagekit.io/stringstackhemavathi/FootRestore%20Heel%20Cream.webp",
+    "category_id": 5
+  },
+  {
+    "name": "Collagen Boost Peptide Serum",
+    "description": "Supports firmer, smoother-looking skin with peptide technology.",
+    "price": 1399.0,
+    "stock": 25,
+    "image": "https://ik.imagekit.io/stringstackhemavathi/'Collagen%20Boost%20Peptide%20Serum.webp",
+    "category_id": 5
+  },
+  {
+    "name": "Daily Hydration Gel Cream",
+    "description": "Lightweight gel moisturizer that provides lasting hydration without heaviness.",
+    "price": 899.0,
+    "stock": 40,
+    "image": "https://ik.imagekit.io/stringstackhemavathi/Daily%20Hydration%20Gel%20Cream.jpg",
+    "category_id": 5
+  }
+]

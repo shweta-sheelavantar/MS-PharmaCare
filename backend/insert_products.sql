@@ -1,0 +1,35 @@
+USE auth_db;
+
+INSERT INTO products (product_id, name, description, price, stock, image, category_id, prescription, rating, reviews, created_at, updated_at) VALUES 
+(31, 'Himalaya Ashwagandha Tablets', 'Supports stress relief and energy levels', 349.00, 120, 'https://ik.imagekit.io/ShwetaStringstack/products/Himalaya%20Ashwagandha%20Tablets.webp?updatedAt=1785384362525', 6, 0, 4.5, 12, NOW(), NOW()),
+(32, 'Dabur Chyawanprash 500g', 'Boosts immunity and overall wellness', 399.00, 80, 'https://ik.imagekit.io/ShwetaStringstack/products/Dabur%20Chyawanprash%20500g.webp?updatedAt=1785384387672', 6, 0, 4.6, 25, NOW(), NOW()),
+(33, 'Patanjali Aloe Vera Juice', 'Supports digestion and detoxification', 220.00, 70, 'https://ik.imagekit.io/ShwetaStringstack/products/Patanjali%20Aloe%20Vera%20Juice.webp?updatedAt=1785384409810', 6, 0, 4.3, 10, NOW(), NOW()),
+(34, 'Baidyanath Triphala Churna', 'Natural digestive and bowel cleanser', 599.00, 100, 'https://ik.imagekit.io/ShwetaStringstack/products/Baidyanath%20Triphala%20Churna.webp?updatedAt=1785384444436', 6, 0, 4.4, 18, NOW(), NOW()),
+(35, 'Himalaya Liv.52 Tablets', 'Supports healthy liver function', 425.00, 95, 'https://ik.imagekit.io/ShwetaStringstack/products/Himalaya%20Liv.52%20Tablets.jpg?updatedAt=1785384471774', 6, 0, 4.8, 50, NOW(), NOW()),
+(36, 'Organic India Tulsi Capsules', 'Supports respiratory and immune health', 185.00, 85, 'https://ik.imagekit.io/ShwetaStringstack/products/Organic%20India%20Tulsi%20Capsules.webp?updatedAt=1785384505537', 6, 0, 4.7, 15, NOW(), NOW()),
+(37, 'Dabur Honitus Syrup', 'Herbal cough relief syrup', 180.00, 110, 'https://ik.imagekit.io/ShwetaStringstack/products/Dabur%20Honitus%20Syrup.webp?updatedAt=1785384531393', 6, 0, 4.5, 30, NOW(), NOW()),
+(38, 'Patanjali Giloy Juice', 'Natural immunity booster', 145.00, 75, 'https://ik.imagekit.io/ShwetaStringstack/products/Patanjali%20Giloy%20Juice.webp?updatedAt=1785384563829', 6, 0, 4.2, 8, NOW(), NOW()),
+(39, 'Kerala Ayurveda Neelibringadi Oil', 'Supports healthy hair growth', 275.00, 60, 'https://ik.imagekit.io/ShwetaStringstack/products/Kerala%20Ayurveda%20Neelibringadi%20Oil.webp?updatedAt=1785384608280', 6, 0, 4.6, 22, NOW(), NOW()),
+(40, 'Himalaya Neem Tablets', 'Supports healthy skin and blood purification', 240.00, 90, 'https://ik.imagekit.io/ShwetaStringstack/products/Himalaya%20Neem%20Tablets.webp?updatedAt=1785384637089', 6, 0, 4.4, 19, NOW(), NOW()),
+(41, 'Baidyanath Ashokarishta', 'Supports womens health', 210.00, 65, 'https://ik.imagekit.io/ShwetaStringstack/products/Baidyanath%20Ashokarishta.webp?updatedAt=1785384661154', 6, 0, 4.5, 11, NOW(), NOW()),
+(42, 'Dhootapapeshwar Shilapravang Gold', 'Supports vitality and strength', 170.00, 40, 'https://ik.imagekit.io/ShwetaStringstack/products/Dhootapapeshwar%20Shilapravang%20Gold.webp?updatedAt=1785384679464', 6, 0, 4.7, 14, NOW(), NOW()),
+(43, 'Charak M2 Tone Syrup', 'Supports menstrual wellness', 165.00, 70, 'https://ik.imagekit.io/ShwetaStringstack/products/Charak%20M2%20Tone%20Syrup.jpg?updatedAt=1785384739685', 6, 0, 4.6, 21, NOW(), NOW()),
+(44, 'Patanjali Amla Juice', 'Rich source of Vitamin C', 225.00, 85, 'https://ik.imagekit.io/ShwetaStringstack/products/Patanjali%20Amla%20Juice.webp?updatedAt=1785384759026', 6, 0, 4.5, 16, NOW(), NOW()),
+(45, 'Organic India Moringa Capsules', 'Supports nutrition and energy', 195.00, 75, 'https://ik.imagekit.io/ShwetaStringstack/products/Organic%20India%20Moringa%20Capsules.webp?updatedAt=1785384783660', 6, 0, 4.7, 13, NOW(), NOW()),
+(46, 'Himalaya Septilin Tablets', 'Supports immune system health', 255.00, 100, 'https://ik.imagekit.io/ShwetaStringstack/products/Himalaya%20Septilin%20Tablets.jpg?updatedAt=1785384957955', 6, 0, 4.5, 27, NOW(), NOW()),
+(47, 'Baidyanath Brahmi Tablets', 'Supports memory and concentration', 240.00, 95, 'https://ik.imagekit.io/ShwetaStringstack/products/Baidyanath%20Brahmi%20Tablets.webp?updatedAt=1785385002948', 6, 0, 4.3, 9, NOW(), NOW()),
+(48, 'Dabur Ashokarishta', 'Traditional Ayurvedic tonic for women', 525.00, 60, 'https://ik.imagekit.io/ShwetaStringstack/products/Dabur%20Ashokarishta.jpg?updatedAt=1785385023395', 6, 0, 4.6, 31, NOW(), NOW()),
+(49, 'Patanjali Divya Madhunashini Vati', 'Supports healthy blood sugar levels', 330.00, 80, 'https://ik.imagekit.io/ShwetaStringstack/products/Patanjali%20Divya%20Madhunashini%20Vati.jpg?updatedAt=1785385052909', 6, 0, 4.4, 20, NOW(), NOW()),
+(50, 'Kerala Ayurveda Dasamoolarishtam', 'Supports joint and muscle health', 95.00, 55, 'https://ik.imagekit.io/ShwetaStringstack/products/Kerala%20Ayurveda%20Dasamoolarishtam.jpg?updatedAt=1785385081813', 6, 0, 4.2, 7, NOW(), NOW()),
+(51, 'Himalaya Gasex Tablets', 'Relieves gas and indigestion', 210.00, 120, 'https://ik.imagekit.io/ShwetaStringstack/products/Himalaya%20Gasex%20Tablets.jpg?updatedAt=1785385108151', 6, 0, 4.5, 42, NOW(), NOW()),
+(52, 'Organic India Brahmi Capsules', 'Supports brain function and relaxation', 195.00, 70, 'https://ik.imagekit.io/ShwetaStringstack/products/Organic%20India%20Brahmi%20Capsules.jpg?updatedAt=1785385126690', 6, 0, 4.6, 17, NOW(), NOW()),
+(53, 'Dabur Sat Isabgol', 'Natural digestive fiber supplement', 465.00, 90, 'https://ik.imagekit.io/ShwetaStringstack/products/Dabur%20Sat%20Isabgol.jpg?updatedAt=1785385144197', 6, 0, 4.4, 33, NOW(), NOW()),
+(54, 'Patanjali Divya Swasari Vati', 'Supports respiratory wellness', 495.00, 85, 'https://ik.imagekit.io/ShwetaStringstack/products/Patanjali%20Divya%20Swasari%20Vati.jpg?updatedAt=1785385160383', 6, 0, 4.5, 29, NOW(), NOW()),
+(55, 'Baidyanath Mahasudarshan Ghan Vati', 'Supports fever management', 195.00, 75, 'https://ik.imagekit.io/ShwetaStringstack/products/Baidyanath%20Mahasudarshan%20Ghan%20Vati.jpg?updatedAt=1785385182459', 6, 0, 4.3, 14, NOW(), NOW()),
+(56, 'Himalaya Rumalaya Tablets', 'Supports joint comfort and mobility', 240.00, 80, 'https://ik.imagekit.io/ShwetaStringstack/products/Himalaya%20Rumalaya%20Tablets.jpg?updatedAt=1785385206168', 6, 0, 4.5, 23, NOW(), NOW()),
+(57, 'Kerala Ayurveda Ksheerabala Oil', 'Supports muscle relaxation', 115.00, 50, 'https://ik.imagekit.io/ShwetaStringstack/products/Kerala%20Ayurveda%20Ksheerabala%20Oil.jpg?updatedAt=1785385224146', 6, 0, 4.7, 18, NOW(), NOW()),
+(58, 'Organic India Turmeric Formula', 'Natural antioxidant support', 195.00, 90, 'https://ik.imagekit.io/ShwetaStringstack/products/Organic%20India%20Turmeric%20Formula.jpg?updatedAt=1785385237157', 6, 0, 4.6, 26, NOW(), NOW()),
+(59, 'Patanjali Divya Arjun Kwath', 'Supports heart health', 230.00, 65, 'https://ik.imagekit.io/ShwetaStringstack/products/Patanjali%20Divya%20Arjun%20Kwath.jpg?updatedAt=1785385256388', 6, 0, 4.5, 12, NOW(), NOW()),
+(60, 'Dabur Lal Tail', 'Ayurvedic massage oil for babies', 320.00, 95, 'https://ik.imagekit.io/ShwetaStringstack/products/Dabur%20Lal%20Tail.jpg?updatedAt=1785385314817', 6, 0, 4.8, 40, NOW(), NOW())
+ON DUPLICATE KEY UPDATE 
+name=VALUES(name), description=VALUES(description), price=VALUES(price), stock=VALUES(stock), image=VALUES(image), category_id=VALUES(category_id);

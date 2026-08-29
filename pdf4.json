@@ -1,0 +1,162 @@
+[
+  {
+    "name": "Electral Powder",
+    "description": "Electral Powder used for healthcare and medical purposes.",
+    "price": 149.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharma/Medicine/Electral%20Powder?updatedAt=1785174105909",
+    "category_id": 1
+  },
+  {
+    "name": "ENO Fruit Salt",
+    "description": "ENO Fruit Salt used for healthcare and medical purposes.",
+    "price": 149.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharma/Medicine/ENO%20Fruit%20Salt?updatedAt=1785174106009",
+    "category_id": 1
+  },
+  {
+    "name": "Dolo 650",
+    "description": "Dolo 650 used for healthcare and medical purposes.",
+    "price": 199.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharma/Medicine/Dolo%20650?updatedAt=1785174105976",
+    "category_id": 1
+  },
+  {
+    "name": "Disposable Gloves (Pack of 50)",
+    "description": "Disposable Gloves (Pack of 50) used for healthcare and medical purposes.",
+    "price": 99.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharma/Medicine/Disposable%20Gloves%20(Pack%20of%2050)?updatedAt=1785174105923",
+    "category_id": 1
+  },
+  {
+    "name": "Digene Tablets",
+    "description": "Digene Tablets used for healthcare and medical purposes.",
+    "price": 149.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharma/Medicine/Digene%20Tablets?updatedAt=1785174106098",
+    "category_id": 1
+  },
+  {
+    "name": "Dabur Chyawanprash",
+    "description": "Dabur Chyawanprash used for healthcare and medical purposes.",
+    "price": 199.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharma/Medicine/Dabur%20Chyawanprash?updatedAt=1785174105883",
+    "category_id": 1
+  },
+  {
+    "name": "Crocin Advance 500",
+    "description": "Crocin Advance 500 used for healthcare and medical purposes.",
+    "price": 199.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharma/Medicine/Crocin%20Advance%20500?updatedAt=1785174105989",
+    "category_id": 1
+  },
+  {
+    "name": "Cotton Roll",
+    "description": "Cotton Roll used for healthcare and medical purposes.",
+    "price": 99.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharma/Medicine/Cotton%20Roll?updatedAt=1785174105908Combiflam",
+    "category_id": 1
+  },
+  {
+    "name": "Combiflam used for healthcare and medical",
+    "description": "purposes.",
+    "price": 199.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharma/Medicine/Combiflam?updatedAt=1785174106039",
+    "category_id": 1
+  },
+  {
+    "name": "Clopidogrel 75 mg",
+    "description": "Clopidogrel 75 mg used for healthcare and medical purposes.",
+    "price": 149.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharma/Medicine/Clopidogrel%2075%20mg?updatedAt=1785174105866",
+    "category_id": 1
+  },
+  {
+    "name": "Cetirizine 10 mg",
+    "description": "Cetirizine 10 mg used for healthcare and medical purposes.",
+    "price": 149.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharma/Medicine/Cetirizine%2010%20mg?updatedAt=1785174106006",
+    "category_id": 1
+  },
+  {
+    "name": "Cefuroxime 500 mg",
+    "description": "Cefuroxime 500 mg used for healthcare and medical purposes.",
+    "price": 149.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharma/Medicine/Cefuroxime%20500%20mg?updatedAt=1785174105827",
+    "category_id": 1
+  },
+  {
+    "name": "Cefixime 200 mg",
+    "description": "Cefixime 200 mg used for healthcare and medical purposes.",
+    "price": 149.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharma/Medicine/Cefixime%20200%20mg?updatedAt=1785174105799",
+    "category_id": 1
+  },
+  {
+    "name": "Budesonide Inhaler",
+    "description": "Budesonide Inhaler used for healthcare and medical purposes.",
+    "price": 149.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharma/Medicine/Budesonide%20Inhaler?updatedAt=1785174105832",
+    "category_id": 1
+  },
+  {
+    "name": "Benadryl Syrup",
+    "description": "Benadryl Syrup used for healthcare and medical purposes.",
+    "price": 149.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharma/Medicine/Benadryl%20Syrup?updatedAt=1785174105538",
+    "category_id": 1
+  },
+  {
+    "name": "Azithromycin 500 mg",
+    "description": "Azithromycin 500 mg used for healthcare and medical purposes.",
+    "price": 149.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharma/Medicine/Azithromycin%20500%20mg?updatedAt=1785174105652",
+    "category_id": 1
+  },
+  {
+    "name": "Atorvastatin 10 mg",
+    "description": "Atorvastatin 10 mg used for healthcare and medical purposes.",
+    "price": 149.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharma/Medicine/Atorvastatin%2010%20mg?updatedAt=1785174105601",
+    "category_id": 1
+  },
+  {
+    "name": "Amoxicillin 500 mg",
+    "description": "Amoxicillin 500 mg used for healthcare and medical purposes.",
+    "price": 149.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharma/Medicine/Amoxicillin%20500%20mg?updatedAt=1785174105538",
+    "category_id": 1
+  },
+  {
+    "name": "Amlodipine 5 mg",
+    "description": "Amlodipine 5 mg used for healthcare and medical purposes.",
+    "price": 149.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharma/Medicine/Amlodipine%205%20mg?updatedAt=1785174105394",
+    "category_id": 1
+  },
+  {
+    "name": "Adhesive Bandages (Band-Aid)",
+    "description": "Adhesive Bandages (Band-Aid) used for healthcare and medical purposes.",
+    "price": 199.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharma/Medicine/Adhesive%20Bandages%20(Band-Aid)?updatedAt=1785174105505",
+    "category_id": 1
+  }
+]

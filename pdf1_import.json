@@ -1,0 +1,272 @@
+[
+  {
+    "id": 1,
+    "name": "Ensure Nutrition Powder 400g",
+    "description": "Complete balanced nutrition supplement",
+    "price": 18.99,
+    "category_id": 1,
+    "image": "https://ik.imagekit.io/ShwetaStringstack/Ensure%20Nutrition%20Powder%20400g.webp",
+    "stock": 100
+  },
+  {
+    "id": 2,
+    "name": "Horlicks Classic 500g",
+    "description": "Malt-based health drink",
+    "price": 7.99,
+    "category_id": 1,
+    "image": "https://ik.imagekit.io/ShwetaStringstack/Horlicks%20Classic%20500g.webp",
+    "stock": 100
+  },
+  {
+    "id": 3,
+    "name": "Protinex Original 400g",
+    "description": "High-protein nutrition powder",
+    "price": 11.99,
+    "category_id": 1,
+    "image": "https://ik.imagekit.io/ShwetaStringstack/Protinex%20Original%20400g.webp",
+    "stock": 100
+  },
+  {
+    "id": 4,
+    "name": "Pediasure Vanilla 400g",
+    "description": "Nutrition supplement for children",
+    "price": 22.99,
+    "category_id": 1,
+    "image": "https://ik.imagekit.io/ShwetaStringstack/Pediasure%20Vanilla%20400g.webp",
+    "stock": 100
+  },
+  {
+    "id": 5,
+    "name": "B-Protin Chocolate",
+    "description": "Protein powder with vitamins",
+    "price": 10.49,
+    "category_id": 1,
+    "image": "https://ik.imagekit.io/ShwetaStringstack/B-Protin%20Chocolate.webp",
+    "stock": 100
+  },
+  {
+    "id": 6,
+    "name": "Himalaya Ashwagandha",
+    "description": "Herbal energy supplement",
+    "price": 6.99,
+    "category_id": 1,
+    "image": "https://ik.imagekit.io/ShwetaStringstack/Himalaya%20Ashwagandha.webp",
+    "stock": 100
+  },
+  {
+    "id": 7,
+    "name": "Revital H Capsules",
+    "description": "Multivitamin and Ginseng capsules",
+    "price": 5.49,
+    "category_id": 1,
+    "image": "https://ik.imagekit.io/ShwetaStringstack/Revital%20H%20Capsules.webp",
+    "stock": 100
+  },
+  {
+    "id": 8,
+    "name": "Zincovit Tablets",
+    "description": "Multivitamin and mineral tablets",
+    "price": 4.99,
+    "category_id": 1,
+    "image": "https://ik.imagekit.io/ShwetaStringstack/Revital%20H%20Capsules.webp",
+    "stock": 100
+  },
+  {
+    "id": 9,
+    "name": "Shelcal 500 Tablets",
+    "description": "Calcium and Vitamin D3 supplement",
+    "price": 3.99,
+    "category_id": 1,
+    "image": "https://ik.imagekit.io/ShwetaStringstack/Shelcal%20500%20Tablets.jpg",
+    "stock": 100
+  },
+  {
+    "id": 10,
+    "name": "Supradyn Daily Tablets",
+    "description": "Daily multivitamin tablets",
+    "price": 4.49,
+    "category_id": 1,
+    "image": "https://ik.imagekit.io/ShwetaStringstack/Supradyn%20Daily%20Tablets.webp",
+    "stock": 100
+  },
+  {
+    "id": 11,
+    "name": "Vitamin C 500mg Tablets",
+    "description": "Immunity support supplement",
+    "price": 5.99,
+    "category_id": 1,
+    "image": "https://ik.imagekit.io/ShwetaStringstack/Vitamin%20C%20500mg%20Tablet.webp",
+    "stock": 100
+  },
+  {
+    "id": 12,
+    "name": "Omega-3 Fish Oil Capsules",
+    "description": "Supports heart and brain health",
+    "price": 12.99,
+    "category_id": 1,
+    "image": "https://ik.imagekit.io/ShwetaStringstack/Omega-3%20Fish%20Oil%20Capsules.webp",
+    "stock": 100
+  },
+  {
+    "id": 13,
+    "name": "Vitamin D3 Capsules",
+    "description": "Supports bone health",
+    "price": 7.49,
+    "category_id": 1,
+    "image": "https://ik.imagekit.io/ShwetaStringstack/Vitamin%20D3%20Capsules.webp",
+    "stock": 100
+  },
+  {
+    "id": 14,
+    "name": "Iron Plus Tablets",
+    "description": "Iron and folic acid supplement",
+    "price": 4.99,
+    "category_id": 1,
+    "image": "https://ik.imagekit.io/ShwetaStringstack/Iron%20Plus%20Tablets'.png",
+    "stock": 100
+  },
+  {
+    "id": 15,
+    "name": "Biotin Hair Gummies",
+    "description": "Supports healthy hair and nails",
+    "price": 14.99,
+    "category_id": 1,
+    "image": "https://ik.imagekit.io/ShwetaStringstack/Biotin%20Hair%20Gummies.webp",
+    "stock": 100
+  },
+  {
+    "id": 16,
+    "name": "Collagen Powder",
+    "description": "Supports skin and joints",
+    "price": 24.99,
+    "category_id": 1,
+    "image": "https://ik.imagekit.io/ShwetaStringstack/Collagen%20Powder.webp",
+    "stock": 100
+  },
+  {
+    "id": 17,
+    "name": "Whey Protein Vanilla",
+    "description": "High-quality protein supplement",
+    "price": 44.99,
+    "category_id": 1,
+    "image": "https://ik.imagekit.io/ShwetaStringstack/Whey%20Protein%20Vanilla.webp",
+    "stock": 100
+  },
+  {
+    "id": 18,
+    "name": "Electrolyte Powder",
+    "description": "Hydration and energy support",
+    "price": 8.99,
+    "category_id": 1,
+    "image": "https://ik.imagekit.io/ShwetaStringstack/Electrolyte%20Powder.webp",
+    "stock": 100
+  },
+  {
+    "id": 19,
+    "name": "Herbal Immunity Booster",
+    "description": "Natural immunity supplement",
+    "price": 9.99,
+    "category_id": 1,
+    "image": "https://ik.imagekit.io/ShwetaStringstack/Herbal%20Immunity%20Booster.jpg",
+    "stock": 100
+  },
+  {
+    "id": 20,
+    "name": "Protein Energy Bars Pack",
+    "description": "High-protein nutrition bars",
+    "price": 13.99,
+    "category_id": 1,
+    "image": "https://ik.imagekit.io/ShwetaStringstack/Protein%20Energy%20Bars%20Pack.webp",
+    "stock": 100
+  },
+  {
+    "id": 21,
+    "name": "Centrum Multivitamin Tablets",
+    "description": "Complete daily multivitamin supplement",
+    "price": 15.99,
+    "category_id": 1,
+    "image": "https://ik.imagekit.io/ShwetaStringstack/Centrum%20Multivitamin%20Tablets.webp",
+    "stock": 100
+  },
+  {
+    "id": 22,
+    "name": "Neurobion Forte Tablets",
+    "description": "Vitamin B complex for nerve health",
+    "price": 6.99,
+    "category_id": 1,
+    "image": "https://ik.imagekit.io/ShwetaStringstack/Neurobion%20Forte%20Tablets.webp",
+    "stock": 100
+  },
+  {
+    "id": 23,
+    "name": "Limcee Vitamin C Tablets",
+    "description": "Chewable Vitamin C for immunity",
+    "price": 4.99,
+    "category_id": 1,
+    "image": "https://ik.imagekit.io/ShwetaStringstack/Limcee%20Vitamin%20C%20Tablets.webp",
+    "stock": 100
+  },
+  {
+    "id": 24,
+    "name": "Becosules Capsules",
+    "description": "Vitamin B-complex supplement",
+    "price": 5.49,
+    "category_id": 1,
+    "image": "https://ik.imagekit.io/ShwetaStringstack/Becosules%20Capsules.webp",
+    "stock": 100
+  },
+  {
+    "id": 25,
+    "name": "Calcimax Tablets",
+    "description": "Calcium, Magnesium and Vitamin D3 supplement",
+    "price": 8.99,
+    "category_id": 1,
+    "image": "https://ik.imagekit.io/ShwetaStringstack/Calcimax%20Tablets.avif",
+    "stock": 100
+  },
+  {
+    "id": 26,
+    "name": "HealthKart Multivitamin Tablets",
+    "description": "Daily nutritional support tablets",
+    "price": 12.99,
+    "category_id": 1,
+    "image": "https://ik.imagekit.io/ShwetaStringstack/HealthKart%20Multivitamin%20Tablets.avif",
+    "stock": 100
+  },
+  {
+    "id": 27,
+    "name": "Evion 400 Capsules",
+    "description": "Vitamin E antioxidant supplement",
+    "price": 7.49,
+    "category_id": 1,
+    "image": "https://ik.imagekit.io/ShwetaStringstack/Evion%20400%20Capsules.avif",
+    "stock": 100
+  },
+  {
+    "id": 28,
+    "name": "A to Z NS Tablets",
+    "description": "Multivitamin and multimineral supplement",
+    "price": 9.49,
+    "category_id": 1,
+    "image": "https://ik.imagekit.io/ShwetaStringstack/A%20to%20Z%20NS%20Tablets.webp",
+    "stock": 100
+  },
+  {
+    "id": 29,
+    "name": "Livogen Tablets",
+    "description": "Iron and folic acid supplement",
+    "price": 5.99,
+    "category_id": 1,
+    "image": "https://ik.imagekit.io/ShwetaStringstack/Livogen%20Tablets.webp",
+    "stock": 100
+  },
+  {
+    "id": 30,
+    "name": "Dolo Vitamin D3 Tablets",
+    "description": "Vitamin D3 supplement for bone health",
+    "price": 6.49,
+    "category_id": 1,
+    "image": "https://ik.imagekit.io/ShwetaStringstack/Dolo%20Vitamin%20D3%20Tablets.jpg",
+    "stock": 100
+  }
+]

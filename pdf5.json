@@ -1,0 +1,98 @@
+[
+  {
+    "name": "Thermometer",
+    "description": "Thermometer - Medical Equipment",
+    "price": 100.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharmacy/Images/Thermometer.webp",
+    "category_id": 3
+  },
+  {
+    "name": "Heating Pad",
+    "description": "Heating Pad - Medical Equipment",
+    "price": 100.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharmacy/Images/Heating%20Pad.jpg",
+    "category_id": 3
+  },
+  {
+    "name": "Nebulizer",
+    "description": "Nebulizer - Medical Equipment",
+    "price": 100.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharmacy/Images/Nebulizer.webp",
+    "category_id": 3
+  },
+  {
+    "name": "Insulin Pen",
+    "description": "Insulin Pen - Medical Equipment",
+    "price": 100.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharmacy/Images/Insulin%20Pen.webp",
+    "category_id": 3
+  },
+  {
+    "name": "BP Monitor",
+    "description": "BP Monitor - Medical Equipment",
+    "price": 100.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharmacy/Images/BP%20Monitor.webp",
+    "category_id": 3
+  },
+  {
+    "name": "Compression Stockings",
+    "description": "Compression Stockings - Medical Equipment",
+    "price": 100.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharmacy/Images/Compression%20Stockings.webp",
+    "category_id": 3
+  },
+  {
+    "name": "Glucometer",
+    "description": "Glucometer - Medical Equipment",
+    "price": 100.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharmacy/Images/Glucometer.jpg",
+    "category_id": 3
+  },
+  {
+    "name": "Weighing Scale",
+    "description": "Weighing Scale - Medical Equipment",
+    "price": 100.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharmacy/Images/Weighing%20Scale.webp",
+    "category_id": 3
+  },
+  {
+    "name": "Suction Machine",
+    "description": "Suction Machine - Medical Equipment",
+    "price": 100.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharmacy/Images/Suction%20Machine.jpg",
+    "category_id": 3
+  },
+  {
+    "name": "Steam Inhaler",
+    "description": "Steam Inhaler - Medical Equipment",
+    "price": 100.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharmacy/Images/Steam%20Inhaler.webp",
+    "category_id": 3
+  },
+  {
+    "name": "Pulse Oximeter",
+    "description": "Pulse Oximeter - Medical Equipment",
+    "price": 100.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharmacy/Images/Pulse%20Oximeter.jpg",
+    "category_id": 3
+  },
+  {
+    "name": "Crap Machine",
+    "description": "Crap Machine - Medical Equipment",
+    "price": 100.0,
+    "stock": 100,
+    "image": "https://ik.imagekit.io/stringstackpharmacy/Images/Crap%20Machine.jpg",
+    "category_id": 3
+  }
+]

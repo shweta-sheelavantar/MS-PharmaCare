@@ -1,0 +1,36 @@
+-- Optional reference schema (JPA ddl-auto=update will create tables automatically)
+
+CREATE DATABASE IF NOT EXISTS auth_db;
+USE auth_db;
+
+CREATE TABLE IF NOT EXISTS users (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    full_name VARCHAR(10) NOT NULL,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    mobile_number VARCHAR(10) NOT NULL UNIQUE,
+    password_hash VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS sessions (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    session_id VARCHAR(36) NOT NULL UNIQUE,
+    user_id BIGINT NOT NULL,
+    jwt_token_hash VARCHAR(255) NOT NULL,
+    login_time TIMESTAMP NOT NULL,
+    expiry_time TIMESTAMP NOT NULL,
+    is_active BOOLEAN NOT NULL DEFAULT TRUE,
+    logout_time TIMESTAMP NULL,
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
+
+CREATE TABLE IF NOT EXISTS password_reset_otps (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    user_id BIGINT NOT NULL,
+    otp_hash VARCHAR(255) NOT NULL,
+    expires_at TIMESTAMP NOT NULL,
+    is_used BOOLEAN NOT NULL DEFAULT FALSE,
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
