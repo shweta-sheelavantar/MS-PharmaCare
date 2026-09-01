@@ -41,8 +41,11 @@ export default function ProductCard({ product }) {
         </button>
         
         <img
-          src={product.image}
+          src={product.image?.includes('ik.imagekit.io') 
+            ? (product.image.includes('?') ? `${product.image}&tr=w-300,h-300,q-80` : `${product.image}?tr=w-300,h-300,q-80`)
+            : product.image}
           alt={product.name}
+          loading="lazy"
           style={{ width: '70%', height: '70%', objectFit: 'contain', mixBlendMode: 'multiply' }}
           onError={(e) => {
             e.target.onerror = null;

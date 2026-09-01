@@ -11,7 +11,7 @@ export default function ProductsPage() {
   );
   const [selectedBrands, setSelectedBrands] = useState([]);
   const [sortBy, setSortBy] = useState('popularity');
-  const [perPage, setPerPage] = useState(12);
+  const [perPage, setPerPage] = useState(20);
   const [viewMode, setViewMode] = useState('grid'); 
   const [maxPrice, setMaxPrice] = useState(5000);
   

@@ -9,6 +9,7 @@ const AdminProducts = () => {
   const [loading, setLoading] = useState(true);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [editingProduct, setEditingProduct] = useState(null);
+  const [currentPage, setCurrentPage] = useState(1);
   
   // Form state
   const [formData, setFormData] = useState({
@@ -181,7 +182,7 @@ const AdminProducts = () => {
                 </tr>
               </thead>
               <tbody>
-                {filteredProducts.map((product) => (
+                {filteredProducts.slice((currentPage - 1) * 20, currentPage * 20).map((product) => (
                   <tr key={product.id}>
                     <td className="id-cell">#{product.id}</td>
                     <td>
@@ -220,11 +221,15 @@ const AdminProducts = () => {
             </table>
           </div>
           <div className="table-foot">
-            <div className="foot-info">Showing {filteredProducts.length} products</div>
+            <div className="foot-info">Showing {Math.min(filteredProducts.length, 20)} of {filteredProducts.length} products</div>
             <div className="pagination">
-              <div className="page-btn"><ChevronLeft size={14} /></div>
-              <div className="page-btn active">1</div>
-              <div className="page-btn"><ChevronRight size={14} /></div>
+              <div className="page-btn" onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))} style={{ cursor: currentPage === 1 ? 'not-allowed' : 'pointer', opacity: currentPage === 1 ? 0.5 : 1 }}>
+                <ChevronLeft size={14} />
+              </div>
+              <div className="page-btn active">{currentPage}</div>
+              <div className="page-btn" onClick={() => setCurrentPage(prev => Math.min(prev + 1, Math.ceil(filteredProducts.length / 20)))} style={{ cursor: currentPage >= Math.ceil(filteredProducts.length / 20) ? 'not-allowed' : 'pointer', opacity: currentPage >= Math.ceil(filteredProducts.length / 20) ? 0.5 : 1 }}>
+                <ChevronRight size={14} />
+              </div>
             </div>
           </div>
         </div>

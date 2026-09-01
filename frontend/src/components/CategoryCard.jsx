@@ -43,6 +43,7 @@ export default function CategoryCard({ category, index = 0, variant = 'photo' })
           <img
             src={category.name && category.name.toLowerCase().includes('ayurved') ? '/ayurvedic.png' : (category.image || '/cat_medicines.png')}
             alt={category.name}
+            loading="lazy"
             style={{ width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', inset: 0 }}
             onError={(e) => {e.target.src = '/cat_medicines.png'}}
           />

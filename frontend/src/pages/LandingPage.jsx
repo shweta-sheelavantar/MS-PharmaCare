@@ -310,8 +310,11 @@ export default function LandingPage() {
                         <svg viewBox="0 0 24 24" fill="none" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z"/></svg>
                       </button>
                       <img 
-                        src={product.image || getCategoryFallbackImage(product.category?.name || product.category)} 
+                        src={product.image?.includes('ik.imagekit.io') 
+                          ? (product.image.includes('?') ? `${product.image}&tr=w-300,h-300,q-80` : `${product.image}?tr=w-300,h-300,q-80`)
+                          : (product.image || getCategoryFallbackImage(product.category?.name || product.category))} 
                         alt={product.name} 
+                        loading="lazy"
                         style={{width: '100%', height: '100%', objectFit: 'contain', mixBlendMode: 'multiply', padding: '16px'}} 
                         onError={(e) => {e.target.src = getCategoryFallbackImage(product.category?.name || product.category)}}
                       />
