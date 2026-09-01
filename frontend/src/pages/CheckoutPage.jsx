@@ -159,7 +159,8 @@ export default function CheckoutPage() {
             }
           }
         };
-        if (response.razorpayOrderId && response.razorpayOrderId.startsWith('order_mock_')) {
+        const frontendKey = import.meta.env.VITE_RAZORPAY_KEY_ID || "your_razorpay_key_id";
+        if (frontendKey === "your_razorpay_key_id" || (response.razorpayOrderId && response.razorpayOrderId.startsWith('order_mock_'))) {
           console.log("Mocking Razorpay payment success for demo...");
           const verifyPayload = {
             orderId: response.orderId,
