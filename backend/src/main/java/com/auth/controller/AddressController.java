@@ -16,7 +16,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/addresses")
-@CrossOrigin(origins = "http://localhost:5173", allowCredentials = "true")
+
 public class AddressController {
 
     @Autowired
