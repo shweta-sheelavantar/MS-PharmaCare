@@ -20,7 +20,7 @@ export default function CheckoutPage() {
   const [isProcessing, setIsProcessing] = useState(false);
   const [addresses, setAddresses] = useState([]);
   const [selectedAddressId, setSelectedAddressId] = useState(null);
-  const [paymentMethod, setPaymentMethod] = useState("RAZORPAY");
+  const [paymentMethod, setPaymentMethod] = useState("COD");
   const [isAddressModalOpen, setIsAddressModalOpen] = useState(false);
   const [editingAddress, setEditingAddress] = useState(null);
   const [loadingAddresses, setLoadingAddresses] = useState(true);
