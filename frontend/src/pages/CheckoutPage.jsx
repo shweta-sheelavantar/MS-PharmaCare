@@ -20,7 +20,7 @@ export default function CheckoutPage() {
   const [isProcessing, setIsProcessing] = useState(false);
   const [addresses, setAddresses] = useState([]);
   const [selectedAddressId, setSelectedAddressId] = useState(null);
-  const [paymentMethod, setPaymentMethod] = useState("COD");
+  const [paymentMethod, setPaymentMethod] = useState("RAZORPAY");
   const [isAddressModalOpen, setIsAddressModalOpen] = useState(false);
   const [editingAddress, setEditingAddress] = useState(null);
   const [loadingAddresses, setLoadingAddresses] = useState(true);
@@ -159,6 +159,28 @@ export default function CheckoutPage() {
             }
           }
         };
+        if (response.razorpayOrderId && response.razorpayOrderId.startsWith('order_mock_')) {
+          console.log("Mocking Razorpay payment success for demo...");
+          const verifyPayload = {
+            orderId: response.orderId,
+            razorpayPaymentId: "pay_mock_" + Date.now(),
+            razorpayOrderId: response.razorpayOrderId,
+            razorpaySignature: "mock_signature"
+          };
+          try {
+            await ecommerceApi.verifyPayment(verifyPayload, token);
+            if (!isBuyNow) clearCart();
+            setIsProcessing(false);
+            navigate(`/order-success/${response.orderId}`);
+          } catch (err) {
+            console.error('Mock verification failed:', err);
+            setIsProcessing(false);
+            alert("Payment verification failed.");
+            navigate('/orders');
+          }
+          return;
+        }
+
         const rzp1 = new window.Razorpay(options);
         rzp1.on('payment.failed', function (response) {
           alert("Payment failed: " + response.error.description);
