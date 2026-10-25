@@ -18,4 +18,4 @@ COPY --from=build /app/target/*.jar app.jar
 
 EXPOSE 10000
 
-ENTRYPOINT ["java", "-jar", "app.jar"]
+ENTRYPOINT ["java", "-XX:+UseContainerSupport", "-XX:MaxRAMPercentage=75.0", "-Xss512k", "-jar", "app.jar"]

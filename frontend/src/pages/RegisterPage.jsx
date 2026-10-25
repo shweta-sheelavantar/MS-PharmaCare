@@ -59,7 +59,13 @@ export default function RegisterPage() {
       setSuccess('Registration successful! Redirecting to login...');
       setTimeout(() => navigate('/login'), 1500);
     } catch (error) {
-      setApiError(error.response?.data?.message || 'Registration failed');
+      if (!error.response) {
+        setApiError('Unable to connect to the backend server. Please check your connection or server status.');
+      } else if (error.response.status >= 500) {
+        setApiError(`Server error (${error.response.status}). The server is temporarily unavailable.`);
+      } else {
+        setApiError(error.response?.data?.message || 'Registration failed');
+      }
     } finally {
       setLoading(false);
     }

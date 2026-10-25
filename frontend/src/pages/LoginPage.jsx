@@ -43,7 +43,13 @@ export default function LoginPage() {
       login(response.data.data);
       navigate('/');
     } catch (error) {
-      setApiError(error.response?.data?.message || 'Invalid credentials');
+      if (!error.response) {
+        setApiError('Unable to connect to the backend server. Please check if the backend is running.');
+      } else if (error.response.status >= 500) {
+        setApiError(`Server is temporarily unavailable (${error.response.status}). If using a free host like Render, it may be waking up (wait 30-60s) or check backend logs.`);
+      } else {
+        setApiError(error.response.data?.message || 'Invalid email/phone or password');
+      }
     } finally {
       setLoading(false);
     }

@@ -14,7 +14,7 @@ Start-Sleep -Seconds 2
 # Start Backend
 Write-Host "[2/4] Starting Backend (port 8080)..." -ForegroundColor Cyan
 $backendDir = Join-Path $PSScriptRoot "backend"
-$env:DB_URL = "jdbc:mysql://localhost:3306/authdb?useSSL=false&allowPublicKeyRetrieval=true"
+$env:DB_URL = "jdbc:mysql://localhost:3306/auth_db?useSSL=false&allowPublicKeyRetrieval=true"
 $env:DB_USERNAME = "root"
 $env:DB_PASSWORD = "Shweta@26"
 Start-Process powershell -ArgumentList "-NoExit", "-Command", "cd '$backendDir'; `$env:DB_URL='$env:DB_URL'; `$env:DB_USERNAME='$env:DB_USERNAME'; `$env:DB_PASSWORD='$env:DB_PASSWORD'; Write-Host 'Backend starting...' -ForegroundColor Cyan; java -jar target\auth-service-1.0.0.jar" -WindowStyle Normal

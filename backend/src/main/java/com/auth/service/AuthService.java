@@ -76,7 +76,7 @@ public class AuthService {
         String identifier = request.getEmail() != null ? request.getEmail().trim() : "";
         log.info("[AUTH-LOGIN-ATTEMPT] Identifier: '{}'", identifier);
 
-        User user = userRepository.findByIdentifier(identifier)
+        User user = userRepository.findByIdentifier(identifier).stream().findFirst()
                 .orElseThrow(() -> {
                     log.warn("[AUTH-LOGIN-FAILED] User not found in MySQL for identifier: '{}'", identifier);
                     return new AuthException("Invalid credentials");
@@ -110,10 +110,11 @@ public class AuthService {
         String identifier = request.getEmail() != null ? request.getEmail().trim() : "";
         log.info("[AUTH-FORGOT-PASSWORD] Request received for identifier: '{}'", identifier);
 
-        var userOpt = userRepository.findByIdentifier(identifier);
-        if (userOpt.isPresent()) {
+        var users = userRepository.findByIdentifier(identifier);
+        if (!users.isEmpty()) {
+            User user = users.get(0);
             log.info("[AUTH-FORGOT-PASSWORD] User FOUND for identifier '{}', triggering OTP generation...", identifier);
-            otpService.generateAndSendOtp(userOpt.get());
+            otpService.generateAndSendOtp(user);
             log.info("[AUTH-FORGOT-PASSWORD] OTP generation + email send completed for identifier '{}'", identifier);
         } else {
             log.warn("[AUTH-FORGOT-PASSWORD] No user found for identifier '{}'. Returning success anyway (anti-enumeration).", identifier);
@@ -124,7 +125,7 @@ public class AuthService {
     @Transactional
     public ResetTokenResponse verifyOtp(VerifyOtpRequest request) {
         String identifier = request.getEmail() != null ? request.getEmail().trim() : "";
-        User user = userRepository.findByIdentifier(identifier)
+        User user = userRepository.findByIdentifier(identifier).stream().findFirst()
                 .orElseThrow(() -> new AuthException("Invalid OTP"));
 
         User verifiedUser = otpService.verifyOtp(user.getEmail(), request.getOtp(), userRepository);

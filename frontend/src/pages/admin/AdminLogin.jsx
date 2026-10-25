@@ -25,7 +25,13 @@ const AdminLogin = () => {
       toast.success('Admin login successful!');
       navigate('/admin/dashboard');
     } catch (error) {
-      toast.error(error.response?.data?.message || 'Invalid credentials');
+      if (!error.response) {
+        toast.error('Unable to connect to the backend server. Please check your network or server status.');
+      } else if (error.response.status >= 500) {
+        toast.error(`Backend server error (${error.response.status}). The server might be starting up or down.`);
+      } else {
+        toast.error(error.response?.data?.message || 'Invalid credentials');
+      }
     } finally {
       setLoading(false);
     }
