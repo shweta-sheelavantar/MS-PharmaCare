@@ -341,3 +341,60 @@
 .admin-categories-wrapper .btn-create { background: var(--accent); color: var(--sidebar-bg); font-weight: 800; }
 .admin-categories-wrapper .btn-create:hover { background: #3EE5CF; }
 .admin-categories-wrapper .btn-create svg { width: 15px; height: 15px; stroke: var(--sidebar-bg); }
+
+/* ---------- Responsive Mobile Styles ---------- */
+@media (max-width: 860px) {
+  .admin-categories-wrapper .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .admin-categories-wrapper .page-head {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+  .admin-categories-wrapper .page-title {
+    font-size: 22px;
+  }
+  .admin-categories-wrapper .add-btn {
+    width: 100%;
+    justify-content: center;
+  }
+  .admin-categories-wrapper .stats {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .admin-categories-wrapper .stat-card {
+    padding: 14px 16px;
+  }
+  .admin-categories-wrapper .table-scroll {
+    -webkit-overflow-scrolling: touch;
+  }
+  .admin-categories-wrapper .scrim {
+    padding: 12px;
+  }
+  .admin-categories-wrapper .modal {
+    max-width: 100%;
+    border-radius: 18px;
+    max-height: 92vh;
+  }
+  .admin-categories-wrapper .modal-head {
+    padding: 16px 18px;
+  }
+  .admin-categories-wrapper .modal-title {
+    font-size: 17px;
+  }
+  .admin-categories-wrapper .modal-body {
+    padding: 18px;
+  }
+  .admin-categories-wrapper .modal-foot {
+    padding: 14px 18px;
+    flex-direction: column-reverse;
+  }
+  .admin-categories-wrapper .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

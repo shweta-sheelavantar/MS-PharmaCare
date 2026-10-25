@@ -24,17 +24,37 @@ apiClient.interceptors.response.use(
   }
 );
 
+let categoriesCache = null;
+let categoriesCacheTime = 0;
+let productsCache = null;
+let productsCacheTime = 0;
+const CACHE_TTL = 60 * 1000;
+
 export const ecommerceApi = {
   // Categories
-  getAllCategories: async () => {
+  getAllCategories: async (forceRefresh = false) => {
+    const now = Date.now();
+    if (!forceRefresh && categoriesCache && (now - categoriesCacheTime < CACHE_TTL)) {
+      return categoriesCache;
+    }
     const response = await apiClient.get('/categories');
+    categoriesCache = response.data;
+    categoriesCacheTime = now;
     return response.data;
   },
 
   // Products
-  getAllProducts: async (searchQuery = '') => {
+  getAllProducts: async (searchQuery = '', forceRefresh = false) => {
+    const now = Date.now();
+    if (!searchQuery && !forceRefresh && productsCache && (now - productsCacheTime < CACHE_TTL)) {
+      return productsCache;
+    }
     const url = searchQuery ? `/products?search=${encodeURIComponent(searchQuery)}` : '/products';
     const response = await apiClient.get(url);
+    if (!searchQuery) {
+      productsCache = response.data;
+      productsCacheTime = now;
+    }
     return response.data;
   },
 

@@ -154,6 +154,25 @@ export default function AdminDashboard() {
         @media (max-width:820px){
           .pca-mini-row, .pca-matrix{ grid-template-columns:1fr; }
         }
+        @media (max-width:640px){
+          .pca-stats{ grid-template-columns:1fr 1fr; gap:10px; }
+          .pca-stat-card{ padding:14px 16px; border-radius:14px; }
+          .pca-stat-value{ font-size:20px; }
+          .pca-stat-icon{ width:34px; height:34px; border-radius:10px; }
+          .pca-stat-icon svg{ width:16px; height:16px; }
+          .pca-stat-foot{ font-size:10px; margin-top:6px; }
+          .pca-page-title{ font-size:22px; }
+          .pca-page-sub{ font-size:12.5px; }
+          .pca-panel{ padding:16px; border-radius:14px; }
+          .pca-fin-row{ font-size:13px; padding:10px 0; }
+          .pca-fin-total{ padding:12px; font-size:13px; }
+          .pca-mini-row{ grid-template-columns:1fr 1fr; gap:8px; }
+          .pca-mini-block{ padding:12px 10px; }
+          .pca-matrix-item{ padding:10px 12px; }
+        }
+        @media (max-width:400px){
+          .pca-stats{ grid-template-columns:1fr; }
+        }
       `}</style>
 
       <main className="pca-main">

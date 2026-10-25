@@ -176,7 +176,12 @@ export default function LandingPage() {
           .pch-hero-title{ font-size: 32px; }
           .pch-cat-grid{ grid-template-columns:repeat(2,minmax(0,1fr)); }
           .pch-trust-grid{ grid-template-columns:1fr; }
-          .pch-prod-grid{ grid-template-columns:1fr; }
+          .pch-prod-grid{ grid-template-columns:repeat(2,minmax(0,1fr)) !important; gap: 10px !important; }
+          .pch-prod-thumb{ height: 115px !important; }
+          .pch-prod-thumb img{ padding: 6px !important; max-height: 80px !important; max-width: 75% !important; object-fit: contain !important; }
+          .pch-prod-body{ padding: 10px !important; }
+          .pch-prod-name{ font-size: 12.5px !important; }
+          .pch-prod-price{ font-size: 15px !important; }
           .pch-cta-card{ padding: 24px; }
         }
       `}</style>

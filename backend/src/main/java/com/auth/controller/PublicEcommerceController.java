@@ -12,11 +12,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Collections;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api")
-
 public class PublicEcommerceController {
 
     @Autowired
@@ -31,8 +33,14 @@ public class PublicEcommerceController {
     @GetMapping("/categories")
     public ResponseEntity<List<CategoryDTO>> getAllCategories() {
         List<Category> categories = categoryRepository.findAll();
+        List<Product> allProducts = productRepository.findAll();
+
+        Map<Long, List<Product>> productsByCat = allProducts.stream()
+                .filter(p -> p.getCategory() != null && p.getCategory().getCategoryId() != null)
+                .collect(Collectors.groupingBy(p -> p.getCategory().getCategoryId()));
+
         List<CategoryDTO> dtos = categories.stream().map(c -> {
-            List<Product> products = productRepository.findByCategoryCategoryId(c.getCategoryId());
+            List<Product> products = productsByCat.getOrDefault(c.getCategoryId(), Collections.emptyList());
             int count = products.size();
             String imageUrl = "";
             if (count > 0 && products.get(0).getImages() != null && !products.get(0).getImages().isEmpty()) {
@@ -52,8 +60,8 @@ public class PublicEcommerceController {
             } else if (catName.contains("medical devices")) {
                 imageUrl = "https://ik.imagekit.io/ShwetaStringstack/products/Medical%20Devices.jpg";
             }
-            String slug = c.getCategoryName().toLowerCase().replace(" ", "-");
-            String desc = "Explore our wide range of " + c.getCategoryName() + " products.";
+            String slug = c.getCategoryName() != null ? c.getCategoryName().toLowerCase().replace(" ", "-") : "";
+            String desc = "Explore our wide range of " + (c.getCategoryName() != null ? c.getCategoryName() : "") + " products.";
             return new CategoryDTO(c.getCategoryId(), c.getCategoryName(), slug, imageUrl, desc, count);
         }).toList();
         return ResponseEntity.ok(dtos);
@@ -67,13 +75,20 @@ public class PublicEcommerceController {
         } else {
             products = productRepository.findAll();
         }
-        return ResponseEntity.ok(products.stream().map(this::convertToDTO).toList());
+
+        List<Review> allReviews = reviewRepository.findAll();
+        Map<Long, List<Review>> reviewsByProduct = allReviews.stream()
+                .filter(r -> r.getProduct() != null && r.getProduct().getProductId() != null)
+                .collect(Collectors.groupingBy(r -> r.getProduct().getProductId()));
+
+        return ResponseEntity.ok(products.stream().map(p -> convertToDTO(p, reviewsByProduct.getOrDefault(p.getProductId(), Collections.emptyList()))).toList());
     }
 
     @GetMapping("/products/{id}")
     public ResponseEntity<ProductDTO> getProductById(@PathVariable Long id) {
+        List<Review> reviews = reviewRepository.findByProductProductId(id);
         return productRepository.findById(id)
-                .map(this::convertToDTO)
+                .map(p -> convertToDTO(p, reviews))
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
     }
@@ -81,14 +96,19 @@ public class PublicEcommerceController {
     @GetMapping("/products/category/{categoryId}")
     public ResponseEntity<List<ProductDTO>> getProductsByCategory(@PathVariable Long categoryId) {
         List<Product> products = productRepository.findByCategoryCategoryId(categoryId);
-        return ResponseEntity.ok(products.stream().map(this::convertToDTO).toList());
+        List<Review> allReviews = reviewRepository.findAll();
+        Map<Long, List<Review>> reviewsByProduct = allReviews.stream()
+                .filter(r -> r.getProduct() != null && r.getProduct().getProductId() != null)
+                .collect(Collectors.groupingBy(r -> r.getProduct().getProductId()));
+
+        return ResponseEntity.ok(products.stream().map(p -> convertToDTO(p, reviewsByProduct.getOrDefault(p.getProductId(), Collections.emptyList()))).toList());
     }
 
-    private ProductDTO convertToDTO(Product product) {
+    private ProductDTO convertToDTO(Product product, List<Review> reviews) {
         CategoryDTO categoryDTO = null;
         if (product.getCategory() != null) {
             Category c = product.getCategory();
-            String slug = c.getCategoryName().toLowerCase().replace(" ", "-");
+            String slug = c.getCategoryName() != null ? c.getCategoryName().toLowerCase().replace(" ", "-") : "";
             categoryDTO = new CategoryDTO(c.getCategoryId(), c.getCategoryName(), slug, null, null, null);
         }
 
@@ -97,13 +117,11 @@ public class PublicEcommerceController {
             imageUrl = product.getImages().get(0).getImageUrl();
         }
         
-        List<Review> reviews = reviewRepository.findByProductProductId(product.getProductId());
         Double averageRating = 0.0;
-        Integer reviewCount = reviews.size();
+        Integer reviewCount = reviews != null ? reviews.size() : 0;
         
         if (reviewCount > 0) {
             averageRating = reviews.stream().mapToInt(Review::getRating).average().orElse(0.0);
-            // round to 1 decimal place
             averageRating = Math.round(averageRating * 10.0) / 10.0;
         }
 

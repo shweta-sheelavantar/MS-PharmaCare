@@ -471,3 +471,56 @@
 .admin-products-wrapper .btn-create { background: var(--accent); color: var(--sidebar-bg); font-weight: 800; }
 .admin-products-wrapper .btn-create:hover { background: #3EE5CF; }
 .admin-products-wrapper .btn-create svg { width: 15px; height: 15px; stroke: var(--sidebar-bg); }
+
+/* ---------- Responsive Styles for Mobile ---------- */
+@media (max-width: 768px) {
+  .admin-products-wrapper .page-head {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+  .admin-products-wrapper .page-title {
+    font-size: 22px;
+  }
+  .admin-products-wrapper .add-btn {
+    width: 100%;
+    justify-content: center;
+  }
+  .admin-products-wrapper .toolbar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+  .admin-products-wrapper .search-box {
+    max-width: 100%;
+    width: 100%;
+  }
+  .admin-products-wrapper .filter-chip {
+    width: 100%;
+  }
+  .admin-products-wrapper .filter-chip select {
+    width: 100%;
+  }
+  .admin-products-wrapper .results-count {
+    margin-left: 0;
+    text-align: right;
+  }
+  .admin-products-wrapper .table-card {
+    border-radius: 14px;
+  }
+  .admin-products-wrapper .table-scroll {
+    -webkit-overflow-scrolling: touch;
+  }
+  .admin-products-wrapper .modal-card {
+    width: 95vw !important;
+    max-height: 92vh;
+  }
+  .admin-products-wrapper .modal-body {
+    padding: 16px;
+  }
+  .admin-products-wrapper .grid-2,
+  .admin-products-wrapper .grid-3 {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}

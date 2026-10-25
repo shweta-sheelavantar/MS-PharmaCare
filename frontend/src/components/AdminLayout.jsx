@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Outlet, Link, useLocation } from 'react-router-dom';
 import { 
   LayoutDashboard, 
@@ -6,7 +6,9 @@ import {
   Tags, 
   ShoppingCart, 
   Users, 
-  LogOut
+  LogOut,
+  Menu,
+  X
 } from 'lucide-react';
 import { useAdminAuth } from '../context/AdminAuthContext';
 import './AdminLayout.css';
@@ -14,6 +16,11 @@ import './AdminLayout.css';
 const AdminLayout = () => {
   const location = useLocation();
   const { logout, adminUser } = useAdminAuth();
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  useEffect(() => {
+    setIsMobileMenuOpen(false);
+  }, [location.pathname]);
 
   const navItems = [
     { name: 'Dashboard', path: '/admin/dashboard', icon: LayoutDashboard },
@@ -27,8 +34,16 @@ const AdminLayout = () => {
 
   return (
     <div className="admin-layout">
+      {/* Mobile Backdrop */}
+      {isMobileMenuOpen && (
+        <div 
+          className="admin-backdrop" 
+          onClick={() => setIsMobileMenuOpen(false)}
+        />
+      )}
+
       {/* Sidebar */}
-      <aside className="admin-sidebar">
+      <aside className={`admin-sidebar ${isMobileMenuOpen ? 'open' : ''}`}>
         {/* Brand Block */}
         <div className="admin-brand">
           <div className="admin-brand-icon">MS</div>
@@ -38,6 +53,13 @@ const AdminLayout = () => {
             </div>
             <div className="admin-brand-sub">Console</div>
           </div>
+          <button 
+            className="admin-sidebar-close" 
+            onClick={() => setIsMobileMenuOpen(false)}
+            aria-label="Close menu"
+          >
+            <X size={20} />
+          </button>
         </div>
         
         {/* Nav List */}
@@ -50,6 +72,7 @@ const AdminLayout = () => {
                   <Link
                     to={item.path}
                     className={`admin-nav-item ${isActive ? 'active' : ''}`}
+                    onClick={() => setIsMobileMenuOpen(false)}
                   >
                     <item.icon />
                     <span>{item.name}</span>
@@ -82,13 +105,22 @@ const AdminLayout = () => {
       <div className="admin-main">
         {/* Top bar */}
         <header className="admin-header">
-          <div className="admin-breadcrumbs">
-            Admin / <span>{currentNav.name}</span>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+            <button 
+              className="admin-mobile-toggle"
+              onClick={() => setIsMobileMenuOpen(true)}
+              aria-label="Open menu"
+            >
+              <Menu size={20} />
+            </button>
+            <div className="admin-breadcrumbs">
+              Admin / <span>{currentNav.name}</span>
+            </div>
           </div>
           
           <div className="admin-status">
             <div className="admin-status-dot"></div>
-            System Status: Operational
+            <span className="admin-status-text">Operational</span>
           </div>
         </header>
 

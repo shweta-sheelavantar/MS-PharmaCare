@@ -46,6 +46,7 @@ export default function ProductCard({ product }) {
             : product.image}
           alt={product.name}
           loading="lazy"
+          className="prod-img"
           style={{ width: '70%', height: '70%', objectFit: 'contain', mixBlendMode: 'multiply' }}
           onError={(e) => {
             e.target.onerror = null;

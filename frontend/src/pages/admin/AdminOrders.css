@@ -339,3 +339,36 @@
   color: #fff;
   border-color: var(--primary);
 }
+
+/* ---------- Responsive Mobile Styles ---------- */
+@media (max-width: 768px) {
+  .admin-orders-wrapper .page-title {
+    font-size: 22px;
+  }
+  .admin-orders-wrapper .toolbar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+  .admin-orders-wrapper .search-box {
+    max-width: 100%;
+    min-width: 0;
+    width: 100%;
+  }
+  .admin-orders-wrapper .filter-chip {
+    width: 100%;
+    justify-content: center;
+  }
+  .admin-orders-wrapper .results-count {
+    margin-left: 0;
+    text-align: right;
+  }
+  .admin-orders-wrapper .table-scroll {
+    -webkit-overflow-scrolling: touch;
+  }
+  .admin-orders-wrapper .table-foot {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+}
